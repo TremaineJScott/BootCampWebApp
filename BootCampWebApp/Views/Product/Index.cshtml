@@ -1,0 +1,16 @@
+﻿@model BootCampWebApp.Models.ProductViewModel
+
+<p>Product View Again</p>
+<p>@Model.Name</p>
+<p>@Model.Description</p>
+<p>@ViewBag.Category</p>
+<p>@ViewBag.Price</p>
+<ul>
+    @foreach (var prd in ViewData["product"] as List<ProductViewModel>)
+    {
+        <li>
+            @prd.Name
+        </li>
+    }
+
+</ul>
